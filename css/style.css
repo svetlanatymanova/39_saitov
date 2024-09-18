@@ -944,6 +944,10 @@ body {
   }
 }
 
+.section-example__title {
+  line-height: 1.2;
+}
+
 @supports (margin-top: clamp( 1.25rem , 0.875rem  +  1.875vw , 3.125rem )) {
   .section-example__cards {
     margin-top: clamp( 1.25rem , 0.875rem  +  1.875vw , 3.125rem );
@@ -975,6 +979,13 @@ body {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 calc(22% - 10px);
           flex: 0 0 calc(22% - 10px);
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .cards__card-more {
@@ -2472,14 +2483,6 @@ body::after {
   }
 }
 
-@media (max-width: 620px) {
-  .cards__card-more {
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 100%;
-            flex: 1 1 100%;
-  }
-}
-
 @media (max-width: 600px) {
   .header__links {
     gap: 26px !important;
@@ -2654,21 +2657,6 @@ body::after {
     display: -ms-inline-flexbox;
     display: inline-flex;
   }
-
-  .cards__card {
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 100%;
-            flex: 1 1 100%;
-  }
-
-  .no-webp .cards__card:nth-child(1){
-    background: url(../img/decor1.png) no-repeat center center; }
-
-  .no-webp .cards__card:nth-child(2){
-    background: url(../img/decor2.png) no-repeat 72% center; }
-
-  .no-webp .cards__card:nth-child(3){
-    background: url(../img/decor3.png) no-repeat center center; }
 }
 
 @media (max-width: 340px) {
@@ -2893,20 +2881,52 @@ body::after {
     text-align: left;
   }
 
+  .section-example__title {
+    max-width: 330px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .cards__card {
     font-size: 16px;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 
-  .cards__card {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 calc(50% - 5px);
-            flex: 0 0 calc(50% - 5px);
-  }
+@supports (font-size: clamp( 1rem , 0.95rem  +  0.25vw , 1.25rem )) {
+    .cards__card {
+      font-size: clamp( 1rem , 0.95rem  +  0.25vw , 1.25rem );
+    }
+}
+
+@supports not (font-size: clamp( 1rem , 0.95rem  +  0.25vw , 1.25rem )) {
+    .cards__card {
+      font-size: calc(
+			1rem + 0.25 * (100vw - 20rem) / 100
+		);
+    }
+}
+
+  .no-webp .cards__card:nth-child(1){
+    background: url(../img/decor1.png) no-repeat center center; }
+
+  .no-webp .cards__card:nth-child(2){
+    background: url(../img/decor2.png) no-repeat 56% center; }
+
+  .no-webp .cards__card:nth-child(3){
+    background: url(../img/decor3.png) no-repeat center center; }
 
   .cards__card-more {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 calc(50% - 5px);
-            flex: 0 0 calc(50% - 5px);
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -2918,9 +2938,19 @@ body::after {
             align-items: center;
   }
 
-  .cards__str {
-    font-size: 16px;
-  }
+@supports (font-size: clamp( 1rem , 0.95rem  +  0.25vw , 1.25rem )) {
+    .cards__str {
+      font-size: clamp( 1rem , 0.95rem  +  0.25vw , 1.25rem );
+    }
+}
+
+@supports not (font-size: clamp( 1rem , 0.95rem  +  0.25vw , 1.25rem )) {
+    .cards__str {
+      font-size: calc(
+			1rem + 0.25 * (100vw - 20rem) / 100
+		);
+    }
+}
 
   .body {
     background: none;
@@ -2951,17 +2981,17 @@ body::after {
 
 .webp .wrapper::before{ background: url(../img/bg-gradient.webp) repeat-x left top; }
 
-@media (max-width: 400px){
+@media (max-width: 61.99875em){
 
   .webp .cards__card:nth-child(1){ background: url(../img/decor1.webp) no-repeat center center; }
 }
 
-@media (max-width: 400px){
+@media (max-width: 61.99875em){
 
-  .webp .cards__card:nth-child(2){ background: url(../img/decor2.webp) no-repeat 72% center; }
+  .webp .cards__card:nth-child(2){ background: url(../img/decor2.webp) no-repeat 56% center; }
 }
 
-@media (max-width: 400px){
+@media (max-width: 61.99875em){
 
   .webp .cards__card:nth-child(3){ background: url(../img/decor3.webp) no-repeat center center; }
 }
