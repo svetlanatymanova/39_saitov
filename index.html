@@ -5,7 +5,7 @@
 	<title>Главная</title>
 	<meta charset="UTF-8" />
 	<meta name="format-detection" content="telephone=no" />
-	<link rel="stylesheet" href="css/style.css?_v=20240917020348" />
+	<link rel="stylesheet" href="css/style.css?_v=20240918223751" />
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
@@ -20,6 +20,11 @@
 						<picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt="" /></picture>
 					</a>
 				</div>
+				<a href="#" class="header__msg">
+					<svg>
+						<use href="img/icons/icons.svg#msgs"></use>
+					</svg>
+				</a>
 				<div class="header__menu menu">
 					<button type="button" class="menu__icon icon-menu"><span></span></button>
 					<nav class="menu__body">
@@ -43,20 +48,29 @@
 					</nav>
 				</div>
 
-				<nav data-da=".menu__body,992" class="header__links links">
-					<a href="tel:+74012509426" class="links__link">
-						<svg>
-							<use href="img/icons/icons-mono.svg#phone"></use>
-						</svg>
-						<span> (4012) 50 94 26 </span>
-					</a>
-					<a href="mailto:info@39saitov.ru" class="links__link links__link-email">
-						<svg>
-							<use href="img/icons/icons-mono.svg#email"></use>
-						</svg>
-						<span>info@39saitov.ru</span>
-					</a>
-				</nav>
+				<ul data-da=".menu__body,992" class="header__links links">
+					<li>
+						<a href="tel:+74012509426" class="links__link links__link-tel">
+							<svg>
+								<use href="img/icons/icons-mono.svg#phone"></use>
+							</svg>
+							<span>+7(4012) 50 94 26 </span>
+						</a>
+					</li>
+					<li>
+						<a href="mailto:info@39saitov.ru" class="links__link links__link-email">
+							<svg>
+								<use href="img/icons/icons-mono.svg#email"></use>
+							</svg>
+							<span>info@39saitov.ru</span>
+						</a>
+						<a href="" class="links__link-tg">
+							<svg>
+								<use href="img/icons/icons.svg#tg"></use>
+							</svg>
+						</a>
+					</li>
+				</ul>
 			</div>
 		</header>
 
@@ -99,7 +113,7 @@
 								</p>
 							</div>
 							<nav class="main-left__buttons">
-								<a href="" class="main-left__button btn">Бесплатный запрос стоимости продвижения</a>
+								<a href="" data-popup="#popup" class="main-left__button btn">Бесплатный запрос стоимости продвижения</a>
 								<a href="" class="main-left__button btn btn-outline">Цены</a>
 							</nav>
 						</div>
@@ -141,8 +155,11 @@
 										выявленных проблем и ошибок;
 									</li>
 									<li>
-										Бесплатные доработки вашего сайта под требования поисковых
-										систем. Пример: ДО и ПОСЛЕ;
+										<span>
+											Бесплатные доработки вашего сайта под требования
+											поисковых систем. Пример: <a href="#">ДО</a> и
+											<a href="#">ПОСЛЕ</a>;
+										</span>
 									</li>
 									<li>
 										Первая страница (топ 10, 5 или 3) в выдаче результатов
@@ -233,6 +250,557 @@
 					</div>
 				</div>
 			</section>
+			<section class="main__section-how section-how">
+				<div class="section-how__container">
+					<div class="section-how__content">
+						<h2 class="section-how__title title title-center">
+							Как это работает
+						</h2>
+						<!-- Оболочка слайдера -->
+						<div class="section-how__slider swiper">
+							<!-- Двигающееся часть слайдера -->
+							<div class="section-how__wrapper swiper-wrapper">
+								<!-- Слайд -->
+								<div class="section-how__slide swiper-slide slide-how">
+									<div class="slide-how__content">
+										<div class="slide-how__icon">
+											<picture><source srcset="img/how1.webp" type="image/webp"><img src="img/how1.png" alt="" /></picture>
+										</div>
+										<p class="slide-how__title">
+											Клиент хочет раскрутить сайт и обращается в «39 сайтов»
+										</p>
+									</div>
+								</div>
+								<div class="section-how__slide swiper-slide slide-how">
+									<div class="slide-how__content">
+										<div class="slide-how__icon">
+											<picture><source srcset="img/how2.webp" type="image/webp"><img src="img/how2.png" alt="" /></picture>
+										</div>
+										<p class="slide-how__title">
+											Наш специалист консультирует, проводит анализ и
+											предлагает окупаемый вариант продвижения
+										</p>
+									</div>
+								</div>
+								<div class="section-how__slide swiper-slide slide-how">
+									<div class="slide-how__content">
+										<div class="slide-how__icon">
+											<picture><source srcset="img/how3.webp" type="image/webp"><img src="img/how3.png" alt="" /></picture>
+										</div>
+										<p class="slide-how__title">
+											Подписывается договор и заказчиком вносится предоплата
+											за первый месяц раскрутки
+										</p>
+									</div>
+								</div>
+								<div class="section-how__slide swiper-slide slide-how">
+									<div class="slide-how__content">
+										<div class="slide-how__icon">
+											<picture><source srcset="img/how4.webp" type="image/webp"><img src="img/how4.png" alt="" /></picture>
+										</div>
+										<p class="slide-how__title">
+											Специалисты «39 сайтов» оптимизируют тексты и структуру,
+											исправляют ошибки сайта, дорабатывают
+										</p>
+									</div>
+								</div>
+								<div class="section-how__slide swiper-slide slide-how">
+									<div class="slide-how__content">
+										<div class="slide-how__icon">
+											<picture><source srcset="img/how5.webp" type="image/webp"><img src="img/how5.png" alt="" /></picture>
+										</div>
+										<p class="slide-how__title">
+											Постепенно повышается авторитетность сайта в Интернет.
+											Сайт делается полезным и удобным для клиентов заказчика
+										</p>
+									</div>
+								</div>
+								<div class="section-how__slide swiper-slide slide-how">
+									<div class="slide-how__content">
+										<div class="slide-how__icon">
+											<picture><source srcset="img/how6.webp" type="image/webp"><img src="img/how6.png" alt="" /></picture>
+										</div>
+										<p class="slide-how__title">
+											Позиции сайта клиента начинают расти и он выходит на
+											первую страницу результатов поиска
+										</p>
+									</div>
+								</div>
+								<div class="section-how__slide swiper-slide slide-how">
+									<div class="slide-how__content">
+										<div class="slide-how__icon">
+											<picture><source srcset="img/how1.webp" type="image/webp"><img src="img/how1.png" alt="" /></picture>
+										</div>
+										<p class="slide-how__title">
+											В последующие месяцы специалисты «39 сайтов»
+											поддерживают сайт на договорных позициях, обновляют,
+											выполняют доработки
+										</p>
+									</div>
+								</div>
+							</div>
+							<!-- Если нужна пагинация -->
+							<div class="swiper-pagination swiper-pagination-how"></div>
+						</div>
+						<div class="section-how__list list list-check">
+							<ul class="list-check__content">
+								<li>
+									<a class="list-ckeck__item" href="#">Действует программа лояльности к клиентам на продвижении
+									</a>
+								</li>
+								<li>
+									<a class="list-ckeck__item" href="#">Воспользуйтесь ценной бесплатной консультацией
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="main__section-benefits section-benefits">
+				<div class="section-benefits__container">
+					<div class="section-benefits__content">
+						<h2 class="section-benefits__title title title-center">
+							Преимущества работы с нами
+						</h2>
+						<ul class="section-benefits__list list-benefits">
+							<li class="list-benefits__item item-benefit">
+								<div class="item-benefit__number">01.</div>
+								<h3 class="item-benefit__title">
+									Поисковое продвижение сайта в Калининграде — наша
+									специализация
+								</h3>
+								<p class="item-benefit__text">
+									Вы заметили как мы расставили акценты на наших услугах? Все
+									потому, что поисковая оптимизация сайта на Яндекс, Гугл и
+									другие поисковые системы — это наша основная специализация.
+									Мы одна из ведущих в Калининграде компаний и успешно
+									поднимаем сайты на первые места уже более 9 лет. Сайты
+									различных тематик и с различными целями клиента. Используя
+									только белые методы мы выведем ваш сайт в топ, исключив
+									санкции. Стоимость? В среднем, от 3000 до 19000 рублей в
+									месяц.
+								</p>
+							</li>
+							<li class="list-benefits__item item-benefit">
+								<div class="item-benefit__number">02.</div>
+								<h3 class="item-benefit__title">
+									Мы предлагаем только окупаемые варианты и честные цены
+								</h3>
+								<p class="item-benefit__text">
+									В отличии от других seo-компаний мы предлагаем своим
+									клиентам только окупаемые варианты раскрутки в поисковиках и
+									<a href="#" class="item-benefit__link">цены на продвижение.</a>
+									Это означает, что после анализа мы предложим, и в
+									переговорах с вами будем настаивать на работе только по тем
+									запросам, которые на 100% соответствуют тематике вашего
+									сайта. Это позволит полностью окупать ежемесячные затраты на
+									продвижение услуг и товаров в интернет, поскольку вы
+									получите только целевой, коммерческий трафик, а не случайных
+									посетителей.
+								</p>
+							</li>
+							<li class="list-benefits__item item-benefit">
+								<div class="item-benefit__number">03.</div>
+								<h3 class="item-benefit__title">
+									Честность — наша основная стратегия в продажах
+								</h3>
+								<p class="item-benefit__text">
+									Наш сайт и стратегия продаж при личных встречах просты,
+									полностью честны и прозрачны. Мы изначально на вашей стороне
+									потому, что нам так же выгоден рост ваших продаж. И
+									поскольку мы предлагаем только окупаемые варианты
+									продвижения сайта, в наших коммерческих предложениях и
+									словах менеджера полностью отсутствует маркетинговая «вода»,
+									невыполнимые обещания и объективно лишние варианты для того
+									или иного клиента.
+								</p>
+							</li>
+							<li class="list-benefits__item item-benefit">
+								<div class="item-benefit__number">04.</div>
+								<h3 class="item-benefit__title">
+									Больше, чем просто договорные обязательства
+								</h3>
+								<p class="item-benefit__text">
+									Поскольку мы работаем на совесть и всегда выполняем
+									договорные и устные обязательства, со всеми нашими клиентами
+									у нас по-настоящему дружеские отношения. Кроме того, наши
+									клиенты довольны нашей работой потому, что мы с ними честны
+									и максимально оперативны в работе. Мы обязательно решим ту
+									или иную проблему связанную с вашим сайтом, проведем
+									компетентную консультацию. Эти слова подтвердит любой наш
+									клиент.
+								</p>
+							</li>
+							<li class="list-benefits__item item-benefit">
+								<div class="item-benefit__number">05.</div>
+								<h3 class="item-benefit__title">
+									Бесплатные опции для каждого клиента
+								</h3>
+								<p class="item-benefit__text">
+									При заключении договора на услуги seo, каждый клиент бонусом
+									получает такие платные у большинства других компаний опции,
+									как:<br />
+									1) Бесплатный аудит сайта и последующее устранение всех
+									выявленных проблем. 2) Неограниченную техническую и
+									юридическую помощь по тем или иным вопросам сайта. 3)
+									Профессиональное создание корпоративной страницы в соц.
+									сетях. 4) Профессиональное курирование компаний контекстной
+									рекламы.
+								</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<section class="main__section-example section-example">
+				<div class="section-example__container">
+					<div class="section-example__content">
+						<h2 class="section-example__title title title-center">
+							Примеры продвижения компаний
+						</h2>
+						<ul class="section-example__cards cards">
+							<li class="cards__card">
+								<div class="cards__info">
+									<div class="cards__str">
+										Компания:
+										<span class="cards__value">СК Носорог</span>
+									</div>
+									<div class="cards__str">
+										Сфера:
+										<span class="cards__value">Очистные сооружения</span>
+									</div>
+									<div class="cards__str">
+										Сайт:
+										<span class="cards__value">sknosorog.ru</span>
+									</div>
+									<div class="cards__str">
+										Поисковая система:
+										<span class="cards__value">Google.ru</span>
+									</div>
+									<div class="cards__str">
+										Регион:
+										<span class="cards__value">Калининград</span>
+									</div>
+									<div class="cards__str">
+										Период:
+										<span class="cards__value">> 7 лет</span>
+									</div>
+								</div>
+								<ul class="cards__list list list-example">
+									<li>
+										<span>запрос <b>позиция</b></span>
+									</li>
+									<li>
+										<span>септик <b>1</b></span>
+									</li>
+									<li>
+										<span>дренаж в Калининграде <b>1</b></span>
+									</li>
+									<li>
+										<span>септик под ключ <b>1</b></span>
+									</li>
+									<li>
+										<span>купить септик <b>1</b></span>
+									</li>
+									<li>
+										<span>утепление в калининграде <b>3</b></span>
+									</li>
+								</ul>
+							</li>
+							<li class="cards__card">
+								<div class="cards__info">
+									<div class="cards__str">
+										Компания:
+										<span class="cards__value">Туранго</span>
+									</div>
+									<div class="cards__str">
+										Сфера:
+										<span class="cards__value">Шины и диски</span>
+									</div>
+									<div class="cards__str">
+										Сайт:
+										<span class="cards__value">turango.ru</span>
+									</div>
+									<div class="cards__str">
+										Поисковая система:
+										<span class="cards__value">Google.ru</span>
+									</div>
+									<div class="cards__str">
+										Регион:
+										<span class="cards__value">Калининград</span>
+									</div>
+									<div class="cards__str">
+										Период:
+										<span class="cards__value">> 7 лет</span>
+									</div>
+								</div>
+								<ul class="cards__list list list-example">
+									<li>
+										<span>запрос <b>позиция</b></span>
+									</li>
+									<li>
+										<span>шины в Калининграде <b>3</b></span>
+									</li>
+									<li>
+										<span>магазин шин <b>4</b></span>
+									</li>
+									<li>
+										<span>продажа дисков <b>5</b></span>
+									</li>
+									<li>
+										<span>зимние шины в Калининграде <b>3</b></span>
+									</li>
+									<li>
+										<span>ремонт шин <b>3</b></span>
+									</li>
+								</ul>
+							</li>
+							<li class="cards__card">
+								<div class="cards__info">
+									<div class="cards__str">
+										Компания:
+										<span class="cards__value">ЭДКАР</span>
+									</div>
+									<div class="cards__str">
+										Сфера:
+										<span class="cards__value">Медицина</span>
+									</div>
+									<div class="cards__str">
+										Сайт:
+										<span class="cards__value">edkar.ru</span>
+									</div>
+									<div class="cards__str">
+										Поисковая система:
+										<span class="cards__value">Google.ru</span>
+									</div>
+									<div class="cards__str">
+										Регион:
+										<span class="cards__value">Калининград</span>
+									</div>
+									<div class="cards__str">
+										Период:
+										<span class="cards__value">> 7 лет</span>
+									</div>
+								</div>
+								<ul class="cards__list list list-example">
+									<li>
+										<span>запрос <b>позиция</b></span>
+									</li>
+									<li>
+										<span>аллерголог <b>3</b></span>
+									</li>
+									<li>
+										<span>кардиолог <b>7</b></span>
+									</li>
+									<li>
+										<span>гастроэнтерогол <b>4</b></span>
+									</li>
+									<li>
+										<span>детский лор <b>4</b></span>
+									</li>
+									<li>
+										<span>платный врач <b>4</b></span>
+									</li>
+								</ul>
+							</li>
+							<li class="cards__card cards__card-more card-more">
+								<div class="card-more__content">
+									<div class="card-more__title">
+										Нужны еще примеры SEO-<br />
+										продвижения?
+									</div>
+									<div class="card-more__subtitle">
+										Приведем! Позвоните (4012) 50 94 26<br />
+										и пригласите нашего специалиста<br /><br />
+										или сделайте
+									</div>
+									<a href="#" data-popup="#popup" class="card-more__btn btn">Бесплатный запрос</a>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<section class="main__section-blog section-blog">
+				<div class="section-blog__container">
+					<div class="section-blog__content">
+						<h2 class="section-blog__title title title-center">Блог</h2>
+						<ul class="section-blog__list list list-blog">
+							<li class="list-blog__item item-blog">
+								<div class="item-blog__content">
+									<div class="list-blog__title">
+										Актуально ли сегодня продвижение сайтов для десктопных
+										компьютеров?
+									</div>
+									<div class="list-blog__subtitle">
+										Представитель Гугл Джон М.Решил
+										<a class="list-blog__link" href="">прокомментировать</a>
+										позицию многих разработчиков, не желающих оптимизировать
+										сайты для стационарных ПК
+									</div>
+								</div>
+							</li>
+							<li class="list-blog__item item-blog">
+								<div class="item-blog__content">
+									<div class="list-blog__title">
+										Итоги годового эксперимента по внутренней поисковой
+										оптимизации
+									</div>
+									<div class="list-blog__subtitle">
+										Сегодня мы хотим
+										<a class="list-blog__link" href="">поделиться</a> c вами
+										результатами нашего годового эксперимента, направленного
+										на рост тематического трафика за счет только внутренней
+										поисковой оптимизации.
+									</div>
+								</div>
+							</li>
+							<li class="list-blog__item item-blog">
+								<div class="item-blog__content">
+									<div class="list-blog__title">10 лет на первом месте!</div>
+									<div class="list-blog__subtitle">
+										Сегодня исполняется ровно 10 лет
+										<a class="list-blog__link" href="">нашему первому месту</a>
+										в результатах поиска Гугл по запросам ассоциативным нашей
+										основной услуге - поисковой оптимизации.
+									</div>
+								</div>
+							</li>
+							<li class="list-blog__item item-blog">
+								<div class="item-blog__content">
+									<div class="list-blog__title">
+										Пояснительная записка по стоимости услуг
+									</div>
+									<div class="list-blog__subtitle">
+										Мы продолжаем
+										<a class="list-blog__link" href="">публиковать в нашем блоге</a>
+										реальные деловые переписки. Сегодня как раз одна из таких
+										- пояснительная записка по стоимости услуг. Клиенту
+										показалось дорого, мы ответили письмом.
+									</div>
+								</div>
+							</li>
+						</ul>
+						<ul class="section-blog__links">
+							<li>
+								<a href="#" class="section-blog__link link">Другие записи нашего блога...</a>
+							</li>
+
+							<li>
+								<a href="#" class="section-blog__link link">Воспользуйтесь бесплатной консультацией</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<section class="main__section-company section-company">
+				<div class="section-company__container">
+					<div class="section-company__content">
+						<section class="section-blog">
+							<h2 class="section-blog__title title title-center">О нас</h2>
+							<ul class="section-blog__list list list-blog list-about">
+								<li class="list-blog__item item-blog">
+									<div class="item-blog__content">
+										<div class="list-blog__subtitle">
+											11 лет на рынке,
+											<a class="list-blog__link" href="">одно из ведущих</a>
+											SEO-агентств в Калининградe.
+										</div>
+									</div>
+								</li>
+								<li class="list-blog__item item-blog">
+									<div class="item-blog__content">
+										<div class="list-blog__subtitle">
+											Партнер рекламной сети Яндекса.
+										</div>
+									</div>
+								</li>
+								<li class="list-blog__item item-blog">
+									<div class="item-blog__content">
+										<div class="list-blog__subtitle">
+											Специалисты по контекстной рекламе и
+											интернет-маркетингу.
+										</div>
+									</div>
+								</li>
+							</ul>
+						</section>
+						<section class="section-contacts">
+							<h2 class="section-contacts__title title title-center">
+								Контакты
+							</h2>
+							<div class="section-contacts__links">
+								<ul class="header__links links">
+									<li>
+										<a href="tel:+74012509426" class="links__link links__link-tel">
+											<svg>
+												<use href="img/icons/icons-mono.svg#phone"></use>
+											</svg>
+											<span>+7(4012) 50 94 26 </span>
+										</a>
+									</li>
+									<li>
+										<a href="mailto:info@39saitov.ru" class="links__link links__link-email">
+											<svg>
+												<use href="img/icons/icons-mono.svg#email"></use>
+											</svg>
+											<span>info@39saitov.ru</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+
+							<p class="section-contacts__p">
+								Калининград, Ленинский пр-т, 30 (Плаза),<br />
+								бизнес-центр, корпус А, офис 637<br />Мы работаем: ПН — ПТ с
+								10:00 до 18:00
+							</p>
+						</section>
+					</div>
+				</div>
+			</section>
+			<section class="main__section-map section-map">
+				<div class="section-map__container">
+					<div id="ymaps-map-id_134265821344536638033" style="width: 100%; height: 300px"></div>
+					<p class="section-contacts__p">
+						Сегодня <span id="currentDate"></span> — мы работаем и ждем ваших
+						заявок. Заказать продвижение сайта можно по телефону
+						<a href="tel:+74012509426" class="link"> 50-94-26</a>.
+					</p>
+				</div>
+
+				<script type="text/javascript">
+					function fid_134265821344536638033(ymaps) {
+						var map = new ymaps.Map("ymaps-map-id_134265821344536638033", {
+							center: [20.508711933868348, 54.71214555934374],
+							zoom: 16,
+							type: "yandex#map",
+						});
+						map.controls
+							.add("zoomControl")
+							.add("mapTools")
+							.add(
+								new ymaps.control.TypeSelector([
+									"yandex#map",
+									"yandex#satellite",
+									"yandex#hybrid",
+									"yandex#publicMap",
+								])
+							);
+						map.geoObjects.add(
+							new ymaps.Placemark(
+								[20.508840679901084, 54.71143740531293], {
+									balloonContent: "39 сайтов"
+								}, {
+									preset: "twirl#greenDotIcon"
+								}
+							)
+						);
+					}
+				</script>
+				<script type="text/javascript" src="//api-maps.yandex.ru/2.0/?coordorder=longlat&load=package.full&wizard=constructor&lang=ru-RU&onload=fid_134265821344536638033&_v=20240918223751"></script>
+			</section>
 		</main>
 		<footer class="footer">
 			<div class="footer__container">
@@ -259,7 +827,49 @@
 		</footer>
 
 	</div>
-	<script src="js/app.min.js?_v=20240917020348"></script>
+	<div id="popup" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">
+					<svg>
+						<use href="img/icons/icons.svg#close"></use>
+					</svg>
+				</button>
+				<div class="popup__form">
+					<h2 class="popup__title title title-center">
+						Запрос стоимости продвижения сайта
+					</h2>
+					<form action="#" method="post">
+						<div class="popup__inputs">
+							<div class="popup__input">
+								<label for="adress">Адрес сайта, который нужно продвинуть *</label>
+								<input type="text" id="adress" />
+							</div>
+							<div class="popup__input popup__input-text">
+								<label for="comment">Комментарий</label>
+								<textarea name="" id="comment" cols="30" rows="10"></textarea>
+							</div>
+							<div class="popup__input">
+								<label for="name">Ваше имя *</label>
+								<input type="text" id="name" />
+							</div>
+							<div class="popup__input">
+								<label for="email">Ваш e-mail *</label>
+								<input type="text" id="email" />
+							</div>
+							<div class="popup__input">
+								<label for="tel">Ваш телефон *</label>
+								<input type="text" id="tel" />
+							</div>
+						</div>
+						<button class="popup__button btn">Отправить заявку</button>
+						<div class="popup__subtext">* — поля обязательные для заполнения</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/app.min.js?_v=20240918223751"></script>
 
 </body>
 
