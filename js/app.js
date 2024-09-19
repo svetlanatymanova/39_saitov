@@ -3829,14 +3829,16 @@
     };
     const da = new DynamicAdapt("max");
     da.init();
-    const date = new Date;
-    const options = {
-        year: "numeric",
-        month: "long",
-        day: "numeric"
-    };
-    const formattedDate = date.toLocaleDateString("ru-RU", options);
-    document.querySelector("#currentDate").textContent = formattedDate;
+    if (document.querySelector(".section-main")) {
+        const date = new Date;
+        const options = {
+            year: "numeric",
+            month: "long",
+            day: "numeric"
+        };
+        const formattedDate = date.toLocaleDateString("ru-RU", options);
+        document.querySelector("#currentDate").textContent = formattedDate;
+    }
     document.querySelector(".header__msg").addEventListener("click", (function() {
         document.querySelector(".icon-menu").click();
     }));
