@@ -3709,15 +3709,11 @@
         modules: [ Navigation, Pagination ],
         loop: false,
         autoHeight: false,
-        spaceBetween: 10,
+        spaceBetween: 5,
         breakpoints: {
-            1420: {
-                slidesPerView: 5,
-                slidesPerGroup: 5
-            },
             992: {
-                slidesPerView: 4,
-                slidesPerGroup: 4
+                slidesPerView: 7,
+                slidesPerGroup: 7
             },
             600: {
                 slidesPerView: 2,
