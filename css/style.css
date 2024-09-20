@@ -3479,9 +3479,9 @@ body::after {
   }
 
   .section-reviews__review {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 100%;
-            flex: 0 0 100%;
+    -webkit-box-flex: 0 !important;
+        -ms-flex: 0 0 100% !important;
+            flex: 0 0 100% !important;
   }
 }
 
@@ -3878,6 +3878,7 @@ body::after {
 
   .tarife {
     padding: 0;
+    background-color: transparent;
   }
 
   .section-map-contacts .section-map__container {
