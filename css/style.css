@@ -1893,7 +1893,7 @@ body {
 }
 
 .main__bread {
-  margin-top: 20px;
+  padding-top: 20px;
 }
 
 .bread {
@@ -3014,6 +3014,7 @@ body::after {
 }
 
 .popup__content {
+  background: url("../img/bgbox1.gif") repeat scroll left top transparent;
   visibility: hidden;
   -webkit-transform: scale(0);
       -ms-transform: scale(0);
@@ -3023,7 +3024,6 @@ body::after {
   -o-transition: transform 0.3s ease 0s;
   transition: transform 0.3s ease 0s;
   transition: transform 0.3s ease 0s, -webkit-transform 0.3s ease 0s;
-  background-color: #eee;
   padding: 20px;
   width: 100%;
   max-width: 460px;
