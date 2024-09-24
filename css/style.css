@@ -3597,16 +3597,16 @@ body::after {
             box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1019607843);
   }
 
-@supports (padding-top: clamp( 2.25rem , 1.45rem  +  4vw , 6.25rem )) {
+@supports (padding-top: clamp( 2.75rem , 2.05rem  +  3.5vw , 6.25rem )) {
     .menu__body {
-      padding-top: clamp( 2.25rem , 1.45rem  +  4vw , 6.25rem );
+      padding-top: clamp( 2.75rem , 2.05rem  +  3.5vw , 6.25rem );
     }
 }
 
-@supports not (padding-top: clamp( 2.25rem , 1.45rem  +  4vw , 6.25rem )) {
+@supports not (padding-top: clamp( 2.75rem , 2.05rem  +  3.5vw , 6.25rem )) {
     .menu__body {
       padding-top: calc(
-			2.25rem + 4 * (100vw - 20rem) / 100
+			2.75rem + 3.5 * (100vw - 20rem) / 100
 		);
     }
 }
