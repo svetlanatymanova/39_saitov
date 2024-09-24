@@ -3628,7 +3628,14 @@ body::after {
   }
 
   .main-left__title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
     color: #686868;
     font-weight: 400;
     padding: 0 40px;
@@ -3793,6 +3800,10 @@ body::after {
     padding: 0 !important;
   }
 
+  .title-contacts {
+    padding: 0 10px !important;
+  }
+
   .body {
     background: none;
   }
@@ -3835,12 +3846,6 @@ body::after {
     max-width: none;
     padding-left: 0.625rem;
     padding-right: 0.625rem;
-  }
-}
-
-@media (max-width: 767px) {
-  .title-contacts {
-    padding: 0 10px !important;
   }
 }
 
